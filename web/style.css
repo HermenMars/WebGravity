@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090d18;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 30px;
+    background: #111827;
+    border-bottom: 1px solid #263247;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+#status {
+    color: #22c55e;
+    font-size: 13px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.simulation {
+    position: relative;
+    min-height: 500px;
+    height: calc(100vh - 150px);
+    background: #020617;
+    border: 1px solid #263247;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #94a3b8;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+aside {
+    background: #111827;
+    border: 1px solid #263247;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+aside h2 {
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.control {
+    margin-top: 25px;
+}
+
+.control label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #3b82f6;
+}
+
+.information {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #263247;
+}
+
+.information h3 {
+    margin-bottom: 12px;
+}
+
+.information p {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+}
+
+@media(max-width: 850px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .simulation {
+        height: 65vh;
+        min-height: 350px;
+    }
+}

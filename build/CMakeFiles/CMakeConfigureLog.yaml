@@ -1,0 +1,689 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/lib/emscripten/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:215 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Emscripten - 1 - x86
+      The host system is: Linux - 7.3.4-arch1-1 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Program used to build from build.ninja files."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ninja-build"
+      - "ninja"
+      - "samu"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/lib/emscripten/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/local/bin/ninja-build"
+      - "/usr/local/bin/ninja"
+      - "/usr/local/bin/samu"
+      - "/usr/bin/ninja-build"
+    found: "/usr/bin/ninja"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-strip"
+      - "strip"
+    candidate_directories:
+      - "/usr/lib/emscripten/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/lib/emscripten/llvm-strip"
+      - "/usr/local/bin/llvm-strip"
+      - "/usr/bin/llvm-strip"
+      - "/usr/local/sbin/llvm-strip"
+      - "/usr/bin/site_perl/llvm-strip"
+      - "/usr/bin/vendor_perl/llvm-strip"
+      - "/usr/bin/core_perl/llvm-strip"
+      - "/home/hurmpel/.local/share/pnpm/bin/llvm-strip"
+      - "/usr/lib/rustup/bin/llvm-strip"
+      - "/home/hurmpel/.lmstudio/bin/llvm-strip"
+      - "/bin/llvm-strip"
+      - "/sbin/llvm-strip"
+      - "/usr/lib/emscripten/strip"
+      - "/usr/local/bin/strip"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld.lld"
+      - "ld"
+    candidate_directories:
+      - "/usr/lib/emscripten/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/lib/emscripten/ld.lld"
+      - "/usr/local/bin/ld.lld"
+      - "/usr/bin/ld.lld"
+      - "/usr/local/sbin/ld.lld"
+      - "/usr/bin/site_perl/ld.lld"
+      - "/usr/bin/vendor_perl/ld.lld"
+      - "/usr/bin/core_perl/ld.lld"
+      - "/home/hurmpel/.local/share/pnpm/bin/ld.lld"
+      - "/usr/lib/rustup/bin/ld.lld"
+      - "/home/hurmpel/.lmstudio/bin/ld.lld"
+      - "/bin/ld.lld"
+      - "/sbin/ld.lld"
+      - "/usr/lib/emscripten/ld"
+      - "/usr/local/bin/ld"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/usr/lib/emscripten/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/lib/emscripten/llvm-objdump"
+      - "/usr/local/bin/llvm-objdump"
+      - "/usr/bin/llvm-objdump"
+      - "/usr/local/sbin/llvm-objdump"
+      - "/usr/bin/site_perl/llvm-objdump"
+      - "/usr/bin/vendor_perl/llvm-objdump"
+      - "/usr/bin/core_perl/llvm-objdump"
+      - "/home/hurmpel/.local/share/pnpm/bin/llvm-objdump"
+      - "/usr/lib/rustup/bin/llvm-objdump"
+      - "/home/hurmpel/.lmstudio/bin/llvm-objdump"
+      - "/bin/llvm-objdump"
+      - "/sbin/llvm-objdump"
+      - "/usr/lib/emscripten/objdump"
+      - "/usr/local/bin/objdump"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/usr/lib/emscripten/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/lib/emscripten/llvm-objcopy"
+      - "/usr/local/bin/llvm-objcopy"
+      - "/usr/bin/llvm-objcopy"
+      - "/usr/local/sbin/llvm-objcopy"
+      - "/usr/bin/site_perl/llvm-objcopy"
+      - "/usr/bin/vendor_perl/llvm-objcopy"
+      - "/usr/bin/core_perl/llvm-objcopy"
+      - "/home/hurmpel/.local/share/pnpm/bin/llvm-objcopy"
+      - "/usr/lib/rustup/bin/llvm-objcopy"
+      - "/home/hurmpel/.lmstudio/bin/llvm-objcopy"
+      - "/bin/llvm-objcopy"
+      - "/sbin/llvm-objcopy"
+      - "/usr/lib/emscripten/objcopy"
+      - "/usr/local/bin/objcopy"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/usr/lib/emscripten/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/lib/emscripten/llvm-readelf"
+      - "/usr/local/bin/llvm-readelf"
+      - "/usr/bin/llvm-readelf"
+      - "/usr/local/sbin/llvm-readelf"
+      - "/usr/bin/site_perl/llvm-readelf"
+      - "/usr/bin/vendor_perl/llvm-readelf"
+      - "/usr/bin/core_perl/llvm-readelf"
+      - "/home/hurmpel/.local/share/pnpm/bin/llvm-readelf"
+      - "/usr/lib/rustup/bin/llvm-readelf"
+      - "/home/hurmpel/.lmstudio/bin/llvm-readelf"
+      - "/bin/llvm-readelf"
+      - "/sbin/llvm-readelf"
+      - "/usr/lib/emscripten/readelf"
+      - "/usr/local/bin/readelf"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/usr/lib/emscripten/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/lib/emscripten/llvm-dlltool"
+      - "/usr/local/bin/llvm-dlltool"
+      - "/usr/bin/llvm-dlltool"
+      - "/usr/local/sbin/llvm-dlltool"
+      - "/usr/bin/site_perl/llvm-dlltool"
+      - "/usr/bin/vendor_perl/llvm-dlltool"
+      - "/usr/bin/core_perl/llvm-dlltool"
+      - "/home/hurmpel/.local/share/pnpm/bin/llvm-dlltool"
+      - "/usr/lib/rustup/bin/llvm-dlltool"
+      - "/home/hurmpel/.lmstudio/bin/llvm-dlltool"
+      - "/bin/llvm-dlltool"
+      - "/sbin/llvm-dlltool"
+      - "/usr/lib/emscripten/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/bin/site_perl/dlltool"
+      - "/usr/bin/vendor_perl/dlltool"
+      - "/usr/bin/core_perl/dlltool"
+      - "/home/hurmpel/.local/share/pnpm/bin/dlltool"
+      - "/usr/lib/rustup/bin/dlltool"
+      - "/home/hurmpel/.lmstudio/bin/dlltool"
+      - "/bin/dlltool"
+      - "/sbin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/usr/lib/emscripten/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/lib/emscripten/llvm-addr2line"
+      - "/usr/local/bin/llvm-addr2line"
+      - "/usr/bin/llvm-addr2line"
+      - "/usr/local/sbin/llvm-addr2line"
+      - "/usr/bin/site_perl/llvm-addr2line"
+      - "/usr/bin/vendor_perl/llvm-addr2line"
+      - "/usr/bin/core_perl/llvm-addr2line"
+      - "/home/hurmpel/.local/share/pnpm/bin/llvm-addr2line"
+      - "/usr/lib/rustup/bin/llvm-addr2line"
+      - "/home/hurmpel/.lmstudio/bin/llvm-addr2line"
+      - "/bin/llvm-addr2line"
+      - "/sbin/llvm-addr2line"
+      - "/usr/lib/emscripten/addr2line"
+      - "/usr/local/bin/addr2line"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/lib/emscripten/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/hurmpel/.local/share/pnpm/bin/"
+      - "/usr/lib/rustup/bin/"
+      - "/home/hurmpel/.lmstudio/bin/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/lib/emscripten/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/bin/site_perl/tapi"
+      - "/usr/bin/vendor_perl/tapi"
+      - "/usr/bin/core_perl/tapi"
+      - "/home/hurmpel/.local/share/pnpm/bin/tapi"
+      - "/usr/lib/rustup/bin/tapi"
+      - "/home/hurmpel/.lmstudio/bin/tapi"
+      - "/bin/tapi"
+      - "/sbin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Platform/Emscripten.cmake:6 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "_EMSCRIPTEN_PLATFORM_MODULE"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "Platform/Emscripten.cmake"
+    candidate_directories:
+      - "/usr/lib/emscripten/cmake/Modules/"
+    found: "/usr/lib/emscripten/cmake/Modules/Platform/Emscripten.cmake"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/emscripten"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/hurmpel/.local/share/pnpm/bin"
+        - "/usr/lib/rustup/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+        - "/home/hurmpel/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/home/hurmpel/.cache/emscripten/sysroot;/home/hurmpel/.cache/emscripten/sysroot"
+...

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/hurmpel/Projects/WebGLSimulator/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
